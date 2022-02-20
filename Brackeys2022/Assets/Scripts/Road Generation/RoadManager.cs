@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -39,7 +40,13 @@ public class RoadManager : MonoBehaviour
             ? lastRoad.EndPosition.transform.rotation * Quaternion.Euler(0, -90, -90)
             : Quaternion.identity;
         
-        Road newObject = Instantiate(randomRoad, pos, rot, transform );
+#if UNITY_EDITOR
+        Road newObject = (Road)PrefabUtility.InstantiatePrefab(randomRoad, transform);
+        newObject.transform.position = pos;
+        newObject.transform.rotation = rot;
+#else
+        Road newObject = Instantiate(randomRoad.GameObject, pos, rot, transform );
+#endif
         newObject.transform.localRotation *= Quaternion.Euler(0, 90, 0);
         lastRoad = newObject;
     }
