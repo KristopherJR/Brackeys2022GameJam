@@ -1,5 +1,4 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
@@ -36,10 +35,12 @@ public class RoadManager : MonoBehaviour
         
         Road randomRoad = roads[Random.Range(0, roads.Count)];
         Vector3 pos = lastRoad != null ? lastRoad.EndPosition.transform.position : Vector3.zero;
-        Quaternion rot = lastRoad != null ? lastRoad.EndPosition.transform.rotation : Quaternion.identity;
+        Quaternion rot = lastRoad != null
+            ? lastRoad.EndPosition.transform.rotation * Quaternion.Euler(0, -90, -90)
+            : Quaternion.identity;
         
-        Road newObject = Instantiate(randomRoad, pos, rot, transform);
-
+        Road newObject = Instantiate(randomRoad, pos, rot, transform );
+        newObject.transform.localRotation *= Quaternion.Euler(0, 90, 0);
         lastRoad = newObject;
     }
 }

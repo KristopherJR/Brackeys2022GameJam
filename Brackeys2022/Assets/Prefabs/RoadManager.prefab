@@ -47,5 +47,5 @@ MonoBehaviour:
   roads:
   - {fileID: 983247053223249982, guid: 20f0f05f6d77cfd42ae8c88c5f5e7b03, type: 3}
   - {fileID: 983247053223249982, guid: d54bb16f8ed907747b19117e16c35a60, type: 3}
-  roadsToGenerate: 7
+  roadsToGenerate: 3
   lastRoad: {fileID: 0}

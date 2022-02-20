@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 985336bef100dbe4cb2ad2111a48df94
+guid: c66da4cd8a8db1a4b8d6eb8b9cdac0ee
 ModelImporter:
   serializedVersion: 21202
   internalIDToNameTable: []
@@ -52,7 +52,7 @@ ModelImporter:
     keepQuads: 0
     weldVertices: 1
     bakeAxisConversion: 0
-    preserveHierarchy: 1
+    preserveHierarchy: 0
     skinWeightsMode: 0
     maxBonesPerVertex: 4
     minBoneWeight: 0.001
