@@ -5,22 +5,10 @@ using UnityEngine;
 public class Road : MonoBehaviour
 {
 
-    [SerializeField]
-    private GameObject endPosition;
+    [field: SerializeField]
+    public Transform EndPosition { get; set; }
     
-    [SerializeField]
-    private GameObject startPosition;
+    [field: SerializeField]
+    public Transform StartPosition  { get; set; }
     
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        Debug.Log(endPosition.transform.position);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
