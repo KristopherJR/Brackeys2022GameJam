@@ -9900,7 +9900,7 @@ PrefabInstance:
     - target: {fileID: 498888307497959550, guid: 8468054672c80bf4ab3c979555f654e3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 1848505bc7d61254ca528bd62446bdce, type: 2}
+      objectReference: {fileID: 2100000, guid: 0a67c95e45cdeec498ca6baa0314c60d, type: 2}
     - target: {fileID: 919132149155446097, guid: 8468054672c80bf4ab3c979555f654e3, type: 3}
       propertyPath: m_Name
       value: Kart
