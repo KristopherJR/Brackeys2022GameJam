@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6711345071861739462}
   - component: {fileID: 983247053223249982}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Curve-Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102,9 +102,29 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 2e6c93c3456a248c391f70016879337f, type: 2}
+    - target: {fileID: -7023455141692465589, guid: 985336bef100dbe4cb2ad2111a48df94, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -897600932299320803, guid: 985336bef100dbe4cb2ad2111a48df94, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 985336bef100dbe4cb2ad2111a48df94, type: 3}
       propertyPath: m_Name
       value: Bend-Right
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 985336bef100dbe4cb2ad2111a48df94, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1196404823138277292, guid: 985336bef100dbe4cb2ad2111a48df94, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5816959438220040674, guid: 985336bef100dbe4cb2ad2111a48df94, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 985336bef100dbe4cb2ad2111a48df94, type: 3}
